@@ -1,0 +1,130 @@
+body 
+{
+    font-family: 'Segoe UI', sans-serif;
+}
+.hero-video 
+{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.hero-video video 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-content 
+{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding-top: 61vh;
+}
+.features-section, .gallery-section, .embed-3d-section 
+{
+    padding: 60px 20px;
+}
+.feature-icon 
+{
+    font-size: 40px;
+    color: #0d6efd;
+}
+.cta-button 
+{
+    margin-top: 30px;
+}
+.heading
+{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+}
+.embed-3d-section
+{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,138,26,1) 35%, rgba(0,212,255,1) 100%);
+    margin-bottom: 150px;
+}
+.small
+{
+    width: 200px;
+    height: 528px;
+}
+.carousel-control-prev
+{
+    padding-left: 2.5%;
+}
+.carousel-control-next
+{
+    padding-right: 2.5%;
+}
+.heading 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container 
+{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+  
+}  
+.image-container img 
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.image-container .name 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(47, 45, 45);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+} 
+@media (max-width: 600px) 
+{
+    .image-container .name 
+    {
+      font-size: 1.5rem;
+    }
+}
+.gallery-img 
+{
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+.gallery-img 
+{
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+.gallery-img:hover 
+{
+    transform: scale(1.1);
+}
+.gallery-img-wrapper 
+{
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
